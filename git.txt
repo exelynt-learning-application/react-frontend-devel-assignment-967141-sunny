@@ -1,0 +1,78 @@
+
+# Version Control Explained for a College Fest Website Team
+
+## 1. What is Version Control?
+
+Version Control is a system that tracks changes made to files and code over time. It allows developers to save different versions of their code, review changes, and restore previous versions when needed.
+
+For a 4-person team building a college fest website, version control is important because all four developers can work on different features at the same time without losing or overwriting each other's work.
+
+Example:
+- Developer 1 works on the Registration page.
+- Developer 2 works on the Events page.
+- Developer 3 works on the Login page.
+- Developer 4 works on the Payment functionality.
+
+Version control helps the team manage all these changes safely and efficiently.
+
+## 2. Three Problems Git Solves
+
+### Problem 1: Lost Code
+
+Without Git, code may be lost if a developer accidentally deletes files or their computer crashes.
+
+Example:
+A developer creates the registration page, but the code is lost due to a laptop issue.
+
+Git helps recover previously committed code from the repository.
+
+### Problem 2: Overwritten Changes
+
+When multiple developers work on the same file, one developer's changes may accidentally overwrite another developer's work.
+
+Example:
+Developer 1 adds validation to the registration form, while Developer 2 changes the styling of the same file.
+
+Git tracks changes and helps the team identify and resolve conflicts instead of silently losing work.
+
+### Problem 3: No Change History
+
+Without Git, it is difficult to know who changed the code, what was changed, or when the change was made.
+
+Example:
+The payment functionality of the college fest website suddenly stops working.
+
+The team can check Git commit history to identify recent changes and find which commit may have caused the issue.
+
+## 3. Difference Between Git and GitHub
+
+### Git
+
+Git is a version control tool that tracks code changes locally on a developer's computer.
+
+### GitHub
+
+GitHub is an online platform where Git repositories can be stored, shared, and managed collaboratively.
+
+In the college fest team's workflow:
+
+- Developers use Git to track their changes.
+- Developers push their code to GitHub.
+- Team members review code on GitHub.
+- Pull Requests are used to review and merge code into the main branch.
+
+## 4. Centralized vs Distributed Version Control
+
+| Centralized Version Control | Distributed Version Control |
+|---|---|
+| Uses a central server to store the repository. | Each developer has a local copy of the repository. |
+| Depends heavily on the central server. | Developers can work locally even without server access. |
+| Server downtime can affect team operations. | Developers can commit changes locally during server downtime. |
+| Repository history is primarily managed centrally. | Each developer has repository history locally. |
+| Collaboration happens through the central server. | Developers share changes when they are ready. |
+
+### Which system should the team use and why?
+
+The 4-person college fest website team should use Distributed Version Control with Git.
+
+It allows every developer to work independently, track changes, maintain code history, and share their work through GitHub. It also helps reduce the risk of losing code and makes collaboration easier.
