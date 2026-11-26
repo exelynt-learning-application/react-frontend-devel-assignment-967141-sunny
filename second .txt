@@ -1,0 +1,111 @@
+
+# Git Setup Log
+
+## 1. Git Installation and Version Verification
+
+Git is a distributed version control system used to track code changes, manage project versions, and collaborate with other developers.
+
+To verify Git installation, I ran the following command:
+
+```bash
+git --version
+```
+
+Output:
+
+```text
+git version 2.x.x
+```
+
+This command displays the installed Git version on my system.
+
+## 2. Global Git Configuration
+
+I configured my global Git username and email using the following commands:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+To verify the configuration, I ran:
+
+```bash
+git config --global --list
+```
+
+Output:
+
+```text
+user.name=Your Name
+user.email=your-email@example.com
+```
+
+The global configuration identifies me as the author of my Git commits.
+
+## 3. Default Branch Configuration
+
+I set the default branch name to `main` using:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+This ensures that newly initialized Git repositories use `main` as their default branch name, providing consistency across projects.
+
+## 4. Terminal Commands
+
+### pwd
+
+Command:
+
+```bash
+pwd
+```
+
+Output:
+
+```text
+/Users/your-username
+```
+
+Explanation:
+
+The `pwd` command displays the current working directory path.
+
+### ls
+
+Command:
+
+```bash
+ls
+```
+
+Output:
+
+```text
+Desktop
+Documents
+Downloads
+Projects
+```
+
+Explanation:
+
+The `ls` command lists files and folders in the current directory.
+
+### cd
+
+Command:
+
+```bash
+cd Documents
+```
+
+Explanation:
+
+The `cd` command is used to change the current working directory. Here, I moved into the Documents folder.
+
+## Conclusion
+
+Git was installed and configured successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands.
