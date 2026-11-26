@@ -109,3 +109,145 @@ The `cd` command is used to change the current working directory. Here, I moved 
 ## Conclusion
 
 Git was installed and configured successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands.
+
+# Git Setup Log
+
+## 1. Git Installation
+
+Git is a distributed version control system used to track changes in source code, manage project versions, and collaborate with other developers.
+
+Git was installed successfully on my Mac.
+
+Command used to verify Git installation:
+
+```bash
+git --version
+```
+
+Example output:
+
+```text
+git version 2.50.1
+```
+
+This command verifies that Git is installed and displays the installed version.
+
+## 2. Global Git Configuration
+
+I configured my global Git username and email.
+
+Commands:
+
+```bash
+git config --global user.name "Akshay Khedkar"
+git config --global user.email "akshay@example.com"
+```
+
+To verify the configuration:
+
+```bash
+git config --global --list
+```
+
+Example output:
+
+```text
+user.name=Akshay Khedkar
+user.email=akshay@example.com
+```
+
+The global Git configuration identifies the author of commits across repositories on my system.
+
+## 3. Default Branch Configuration
+
+Command:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+To verify:
+
+```bash
+git config --global init.defaultBranch
+```
+
+Output:
+
+```text
+main
+```
+
+Setting the default branch to `main` ensures that newly initialized repositories use a consistent default branch name.
+
+## 4. Terminal Commands
+
+### pwd
+
+Command:
+
+```bash
+pwd
+```
+
+Example output:
+
+```text
+/Users/akshay
+```
+
+Explanation:
+
+The `pwd` command displays the current working directory path.
+
+### ls
+
+Command:
+
+```bash
+ls
+```
+
+Example output:
+
+```text
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+```
+
+Explanation:
+
+The `ls` command lists files and folders available in the current directory.
+
+### cd
+
+Command:
+
+```bash
+cd Documents
+```
+
+Explanation:
+
+The `cd` command changes the current working directory. In this example, it moves into the Documents directory.
+
+To verify the current directory:
+
+```bash
+pwd
+```
+
+Example output:
+
+```text
+/Users/akshay/Documents
+```
+
+## Conclusion
+
+Git installation and configuration were completed successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands such as pwd, ls, and cd.
