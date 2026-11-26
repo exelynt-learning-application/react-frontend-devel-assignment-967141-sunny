@@ -1,253 +1,59 @@
 
-# Git Setup Log
+## 5. Understanding Git Commands
 
-## 1. Git Installation and Version Verification
+### git --version
 
-Git is a distributed version control system used to track code changes, manage project versions, and collaborate with other developers.
+This command checks whether Git is installed and displays the installed version.
 
-To verify Git installation, I ran the following command:
+### git config --global user.name
 
-```bash
-git --version
-```
+This command sets the username that Git associates with commits.
 
-Output:
+### git config --global user.email
 
-```text
-git version 2.x.x
-```
+This command sets the email address associated with Git commits.
 
-This command displays the installed Git version on my system.
+### git config --global --list
 
-## 2. Global Git Configuration
+This command displays the global Git configuration settings, including username, email, and other configured values.
 
-I configured my global Git username and email using the following commands:
+### git config --global init.defaultBranch main
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
-```
-
-To verify the configuration, I ran:
-
-```bash
-git config --global --list
-```
-
-Output:
-
-```text
-user.name=Your Name
-user.email=your-email@example.com
-```
-
-The global configuration identifies me as the author of my Git commits.
-
-## 3. Default Branch Configuration
-
-I set the default branch name to `main` using:
-
-```bash
-git config --global init.defaultBranch main
-```
-
-This ensures that newly initialized Git repositories use `main` as their default branch name, providing consistency across projects.
-
-## 4. Terminal Commands
+This command sets the default branch name to main for newly initialized repositories.
 
 ### pwd
 
-Command:
-
-```bash
-pwd
-```
-
-Output:
-
-```text
-/Users/your-username
-```
-
-Explanation:
-
-The `pwd` command displays the current working directory path.
+This command displays the absolute path of the current working directory.
 
 ### ls
 
-Command:
-
-```bash
-ls
-```
-
-Output:
-
-```text
-Desktop
-Documents
-Downloads
-Projects
-```
-
-Explanation:
-
-The `ls` command lists files and folders in the current directory.
+This command lists files and directories in the current working directory.
 
 ### cd
 
-Command:
+This command changes the current working directory to another directory.
+
+## 6. Why Git Configuration Is Important
+
+Git configuration is important because it identifies the author of each commit and ensures that repository settings are consistent. Setting the default branch to main also helps maintain a consistent naming convention across new projects.
+
+## 7. Git Workflow
+
+A basic Git workflow consists of the following steps:
+
+1. Create or modify files.
+2. Check changes using git status.
+3. Stage changes using git add.
+4. Commit changes using git commit.
+5. Push changes to GitHub using git push.
+
+Example commands:
 
 ```bash
-cd Documents
+git status
+git add git-setup-log.md
+git commit -m "Complete Git setup documentation"
+git push
 ```
 
-Explanation:
-
-The `cd` command is used to change the current working directory. Here, I moved into the Documents folder.
-
-## Conclusion
-
-Git was installed and configured successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands.
-
-# Git Setup Log
-
-## 1. Git Installation
-
-Git is a distributed version control system used to track changes in source code, manage project versions, and collaborate with other developers.
-
-Git was installed successfully on my Mac.
-
-Command used to verify Git installation:
-
-```bash
-git --version
-```
-
-Example output:
-
-```text
-git version 2.50.1
-```
-
-This command verifies that Git is installed and displays the installed version.
-
-## 2. Global Git Configuration
-
-I configured my global Git username and email.
-
-Commands:
-
-```bash
-git config --global user.name "Akshay Khedkar"
-git config --global user.email "akshay@example.com"
-```
-
-To verify the configuration:
-
-```bash
-git config --global --list
-```
-
-Example output:
-
-```text
-user.name=Akshay Khedkar
-user.email=akshay@example.com
-```
-
-The global Git configuration identifies the author of commits across repositories on my system.
-
-## 3. Default Branch Configuration
-
-Command:
-
-```bash
-git config --global init.defaultBranch main
-```
-
-To verify:
-
-```bash
-git config --global init.defaultBranch
-```
-
-Output:
-
-```text
-main
-```
-
-Setting the default branch to `main` ensures that newly initialized repositories use a consistent default branch name.
-
-## 4. Terminal Commands
-
-### pwd
-
-Command:
-
-```bash
-pwd
-```
-
-Example output:
-
-```text
-/Users/akshay
-```
-
-Explanation:
-
-The `pwd` command displays the current working directory path.
-
-### ls
-
-Command:
-
-```bash
-ls
-```
-
-Example output:
-
-```text
-Desktop
-Documents
-Downloads
-Library
-Movies
-Music
-Pictures
-```
-
-Explanation:
-
-The `ls` command lists files and folders available in the current directory.
-
-### cd
-
-Command:
-
-```bash
-cd Documents
-```
-
-Explanation:
-
-The `cd` command changes the current working directory. In this example, it moves into the Documents directory.
-
-To verify the current directory:
-
-```bash
-pwd
-```
-
-Example output:
-
-```text
-/Users/akshay/Documents
-```
-
-## Conclusion
-
-Git installation and configuration were completed successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands such as pwd, ls, and cd.
+These commands help track, save, and share project changes.
