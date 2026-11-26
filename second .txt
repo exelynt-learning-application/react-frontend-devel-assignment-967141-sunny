@@ -57,3 +57,174 @@ git push
 ```
 
 These commands help track, save, and share project changes.
+git --version
+# Git Setup Log
+
+## 1. Git Installation and Version Verification
+
+Git is a distributed version control system used to track code changes, manage project versions, and collaborate with other developers.
+
+To verify Git installation, I ran the following command:
+
+```bash
+git --version
+```
+
+Output:
+
+```text
+git version 2.x.x
+```
+
+This command displays the installed Git version on my system.
+
+## 2. Global Git Configuration
+
+I configured my global Git username and email using the following commands:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+To verify the configuration, I ran:
+
+```bash
+git config --global --list
+```
+
+Output:
+
+```text
+user.name=Your Name
+user.email=your-email@example.com
+```
+
+The global configuration identifies me as the author of my Git commits.
+
+## 3. Default Branch Configuration
+
+I set the default branch name to `main` using:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+This ensures that newly initialized Git repositories use `main` as their default branch name, providing consistency across projects.
+
+## 4. Terminal Commands
+
+### pwd
+
+Command:
+
+```bash
+pwd
+```
+
+Output:
+
+```text
+/Users/your-username
+```
+
+Explanation:
+
+The `pwd` command displays the current working directory path.
+
+### ls
+
+Command:
+
+```bash
+ls
+```
+
+Output:
+
+```text
+Desktop
+Documents
+Downloads
+Projects
+```
+
+Explanation:
+
+The `ls` command lists files and folders in the current directory.
+
+### cd
+
+Command:
+
+```bash
+cd Documents
+```
+
+Explanation:
+
+The `cd` command is used to change the current working directory. Here, I moved into the Documents folder.
+
+## Conclusion
+
+Git was installed and configured successfully. I verified the Git version, configured my global username and email, set the default branch to main, and practiced basic terminal commands.
+
+## 5. Understanding Git Commands
+
+### git --version
+
+This command checks whether Git is installed and displays the installed version.
+
+### git config --global user.name
+
+This command sets the username that Git associates with commits.
+
+### git config --global user.email
+
+This command sets the email address associated with Git commits.
+
+### git config --global --list
+
+This command displays the global Git configuration settings, including username, email, and other configured values.
+
+### git config --global init.defaultBranch main
+
+This command sets the default branch name to main for newly initialized repositories.
+
+### pwd
+
+This command displays the absolute path of the current working directory.
+
+### ls
+
+This command lists files and directories in the current working directory.
+
+### cd
+
+This command changes the current working directory to another directory.
+
+## 6. Why Git Configuration Is Important
+
+Git configuration is important because it identifies the author of each commit and ensures that repository settings are consistent. Setting the default branch to main also helps maintain a consistent naming convention across new projects.
+
+## 7. Git Workflow
+
+A basic Git workflow consists of the following steps:
+
+1. Create or modify files.
+2. Check changes using git status.
+3. Stage changes using git add.
+4. Commit changes using git commit.
+5. Push changes to GitHub using git push.
+
+Example commands:
+
+```bash
+git status
+git add git-setup-log.md
+git commit -m "Complete Git setup documentation"
+git push
+```
+
+These commands help track, save, and share project changes.
+
